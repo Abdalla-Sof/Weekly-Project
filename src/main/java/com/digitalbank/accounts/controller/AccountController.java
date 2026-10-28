@@ -3,7 +3,6 @@ package com.digitalbank.accounts.controller;
 
 import com.digitalbank.accounts.dto.AccountResponse;
 import com.digitalbank.accounts.dto.CreateAccountRequest;
-import com.digitalbank.accounts.service.AccountService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,11 +12,11 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/accounts")
-public class AccountController {
+public class AccountService {
 
-    private final AccountService accountService;
+    private final com.digitalbank.accounts.service.AccountService accountService;
 
-    public AccountController(AccountService accountService) {
+    public AccountService(com.digitalbank.accounts.service.AccountService accountService) {
         this.accountService = accountService;
     }
 
