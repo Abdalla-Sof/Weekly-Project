@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: loans
+
+  config:
+    import: "optional:configserver:http://localhost:8071"
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/loansdb
+    username: banking_user
+    password: "1221"
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
