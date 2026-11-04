@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: "file:///C:/Users/MHMBLL01L/banking-config-repo"
+          default-label: main
+
+server:
+  port: 8071

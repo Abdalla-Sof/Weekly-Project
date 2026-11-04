@@ -1,0 +1,7 @@
+banking:
+  demo-message: "Hello from Digital Banking Config Server"
+  support-email: "Guled@gmail.com"
+server:
+  port: 8083
+
+
