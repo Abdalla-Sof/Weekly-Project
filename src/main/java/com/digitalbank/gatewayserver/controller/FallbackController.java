@@ -1,5 +1,5 @@
 
-package controller;
+package com.digitalbank.gatewayserver.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
